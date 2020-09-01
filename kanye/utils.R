@@ -1,0 +1,5 @@
+TITULAR_FONT_FAMILY <- 'Adobe Caslon'
+BASE_FONT_FAMILY <- 'Lato'
+
+BASE_COLOR <- 'red'
+SECONDARY_COLOR <- 'black'

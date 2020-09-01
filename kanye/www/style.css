@@ -1,0 +1,50 @@
+html, body {
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1, h2 {
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#text {
+  background-color: black;
+  color: white;
+}
+
+a {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: red;
+}
+
+/* PARALLAX */
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(15%) blur(0px) sharpen(2px);
+}
+
+#section-one {
+  height: 90vh;
+  background-color: black;
+  background-image: url("header.jpg");
+}
+
+#section-two {
+  height: 100vh;
+  background-image: url("prayer.jpg");
+}
+
+#section-three {
+   height: 100vh;
+   background-image: url("prayer.jpg");
+}
