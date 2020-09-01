@@ -79,7 +79,7 @@ ui <- fluidPage(
                                                                 # div(uiOutput('metric_list'), style = 'font-size: 80%')
                                                                 ),
                                                HTML('<center>'),
-                                               highchartOutput('metrics', height = '600px'),
+                                               highchartOutput('plot1', height = '600px'),
                                                HTML('</center>')
                                  ),
                                  
@@ -108,7 +108,7 @@ ui <- fluidPage(
                                                      br(),
                                                      br()
                                      ),
-                                     scrolly_section(id = "type_blank",
+                                     scrolly_section(id = "all",
                                                      br()
                                      )
                                  ) # close scrolly_sections
@@ -200,10 +200,10 @@ ui <- fluidPage(
                                    br(),
                                    HTML("<h2>Death.</h2> 
                                    
-                                As expected, once the men's Olympic basketball competition began, there was only one team that could leave Barcelona with the gold medal.  The United States cruised through all eight of its contests. In fact, during several games, it appeared as though the opposing team was just happy to be on the same floor as the NBA players.<br><br>
+                                Lorem ipsum lorem ipsum.<br><br>
                                 
-                                Team USA averaged 117 points per game and held opponents to a measly 73 points per game over the two-week stretch.  Charles Barkley (18 PPG) and Michael Jordan (14.9 PPG) led the way in scoring.<br><br>
-                                Below is a look at player contributions in each of their eight victories.</p>"),
+                                Lorem ipsum lorem ipsum.<br><br>
+                                Lorem ipsum lorem ipsum.</p>"),
                                    br()
                             ),
                             column(1)
@@ -216,7 +216,7 @@ ui <- fluidPage(
                
                fluidRow(
                    HTML('<center>'),
-                   highchartOutput('plot', height = '500px'),
+                   highchartOutput('plot2', height = '500px'),
                    HTML('</center>')
                ),
                
@@ -237,23 +237,7 @@ ui <- fluidPage(
                fluidRow(
                    column(2),
                    column(8,
-                          HTML("<p><i>
-                <span style='font-size:18px'><u>References</u></span><br>
-                <span style='font-size:14px'>
-                Data and photos were collected from several sites in order to create this web application, including
-                <a href='https://www.nba.com' target='_blank'>nba.com</a> (career statistics, team photo, and player photos excluding J. Stockton and C. Laettner), 
-                <a href='https://www.basketball-reference.com' target='_blank'>basketball-reference.com</a> (player photos of J. Stockton and C. Laettner), and 
-                <a href='https://www.archive.fiba.com' target='_blank'>archive.fiba.com</a> (box scores for the 1992 Olympic men's basketball tournament). 
-                The R packages powering this site include 
-                <a href='https://www.tidyverse.org/' target='_blank'>tidyverse</a>,
-                <a href='http://shiny.rstudio.com/' target='_blank'>shiny</a>,
-                <a href='https://github.com/dreamRs/shinyWidgets' target='_blank'>shinyWidgets</a>,
-                <a href='https://github.com/JohnCoene/scrollytell' target='_blank'>scrollytell</a>,
-                <a href='https://plot.ly/r/' target='_blank'>plotly</a>,
-                <a href='https://github.com/tidyverse/glue' target='_blank'>glue</a>, and 
-                <a href='https://readxl.tidyverse.org/' target='_blank'>readxl</a>.
-                </span>
-                </i></p>")
+                          HTML("<p>Credits</p>")
                    ),
                    column(2)
                ),

@@ -1,8 +1,6 @@
 library(shiny)
 library(highcharter)
 
-# load(url('https://github.com/scottyd22/dream_team/blob/master/dream_team_data.RData?raw=true'))
-
 source('utils.R')
 
 data(diamonds, economics_long, mpg, package = "ggplot2")
@@ -25,22 +23,8 @@ server <- function(input, output, session) {
         }
     })
     
-    
-    # Metric plot----
-    # Radio buttons to select metric to plot
-    output$metric_list <- renderUI({
-        radioGroupButtons(
-            inputId = "metric", label = "",
-            choices = c('Points', 'Rebounds', 'Assists', 'Steals', 'Blocks', 'FG%', '3P%', 'FT%', 'Minutes'),
-            selected = 'Points',
-            size = 'sm',
-            justified = TRUE,
-            status = "default"
-        )
-    })
-    
     # Plot of career stats/metrics
-    output$metrics <- renderHighchart({
+    output$plot1 <- renderHighchart({
         
         # When users scroll to the section "1992", change the chart
         if(input$type == 'all') {
@@ -56,7 +40,7 @@ server <- function(input, output, session) {
     })
     
     # Box Scores ----
-    output$plot <- renderHighchart({
+    output$plot2 <- renderHighchart({
        
         mpgman2 <- mpg %>% 
             count(class, year)
